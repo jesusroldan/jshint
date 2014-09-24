@@ -2,3 +2,35 @@ language: node_js
 node_js:
   - "0.10"
   - "0.11"
+
+
+
+<$php
+//checando la conexion
+?Open cnecction
+$con=mysqli_connect("www.elnorte.com","peter","abc123","my_db");
+
+intent {
+  get variable (external_preview);
+  node_js@OLEDBD_mySql ("www.elnorte.com")
+  $con=mysqli_connect("www.elnorte.com","peter","abc123","my_db");
+  
+  if (mysqli_connect_errno()) {
+  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+
+if {echo "Failed to connect to MySQL"
+
+        init_get (echo "_variable4"; inherit echo "&_variable5"; inherit echo "&_variable6")
+
+        bool $NewLink
+
+        init_get (echo "_variable4"; inherit echo "&_variable5"; inherit echo "&_variable6")
+  
+}
+
+sql safe_mode (windows_show_crt_warning);
+
+mysqli_close($con);
+
+?>
